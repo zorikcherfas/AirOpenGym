@@ -7,7 +7,6 @@ class RoomsController < ApplicationController
   end
 
   def new
-    puts "ss"
     @room = current_user.rooms.build
   end
 
@@ -16,7 +15,8 @@ class RoomsController < ApplicationController
     if @room.save
       redirect_to listing_room_path(@room), notice:"Saved..."
     else
-      render :new, notice:"Something went wrong..."
+      flash[:alert] ="Something went wrong..."
+      render :new
     end
   end
 
