@@ -33,6 +33,7 @@ gem 'omniauth-facebook', '~> 4.0'
 gem 'jquery-rails'
 gem 'paperclip', '~> 5.1.0'
 gem 'font-awesome-sass'
+gem 'geocoder'
 
 
 group :development, :test do
