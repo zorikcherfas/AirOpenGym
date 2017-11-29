@@ -58,8 +58,8 @@ Rails.application.configure do
      address: 'smtp.mailgun.org',
      port: 587,
      authentication: 'plain',
-     user_name: 'postmaster@sandbox06bcfadc17ec4d269ec735f4812aaf6e.mailgun.org',
-     password: '91463e0e5625e36ab04e0bd8a89c28a3'
+     user_name: '',
+     password: ''
    }
 
 end
